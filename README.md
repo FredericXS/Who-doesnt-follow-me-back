@@ -18,11 +18,11 @@
 * Download and install [Python 3](https://www.python.org/)
 * Open your terminal and clone the project to your PC:
 ```
-git clone https://github.com/FredericXS/Who-follow-me-back
+git clone https://github.com/FredericXS/Who-doesnt-follow-me-back
 ```
 * Enter in the project folder:
 ```
-cd Who-follow-me-back
+cd Who-doesnt-follow-me-back
 ```
 * Install the requirements with this command:
 ```
