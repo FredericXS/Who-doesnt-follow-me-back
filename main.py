@@ -25,7 +25,7 @@ print('''
 sleep(1)
 
 print("\033[0;31mMade by @xsfrederic\033[m")
-print("\033[0;31mCheck who doesn't follow You!\033[m")
+print("\033[0;31mCheck who doesn't follow You back!\033[m")
 
 sleep(1)
 
