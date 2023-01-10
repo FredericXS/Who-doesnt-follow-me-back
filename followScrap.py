@@ -1,14 +1,14 @@
 from getpass import getpass
 import instaloader
-L = instaloader.Instaloader()
+ig = instaloader.Instaloader()
 
 user = input("Username: ")
 password = getpass()
 
-L.login(user, password)
+ig.login(user, password)
 print(f"\033[0;32mSuccefully logged in @{user}!\033[m")
 
-profile = instaloader.Profile.from_username(L.context, user)
+profile = instaloader.Profile.from_username(ig.context, user)
 
 following_list = []
 followers_list = []
@@ -16,18 +16,14 @@ notfollowme_list = []
 inotfollow_list = []
 
 def get_following():
-    count = 0 
     print("Getting following list...")
     for followee in profile.get_followees():
         following_list.append(followee.username)
-        count += 1
 
 def get_followers():
-    count = 0
     print("Getting followers list...")
     for follower in profile.get_followers():
         followers_list.append(follower.username)
-        count += 1
 
 get_following()
 get_followers()
